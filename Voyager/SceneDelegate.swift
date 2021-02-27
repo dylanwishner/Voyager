@@ -18,7 +18,18 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         let window = UIWindow(windowScene: windowScene)
         
-        window.rootViewController = LaunchViewController()
+        // Setup tab bar and its view controllers
+        let tabBarController = UITabBarController()
+        
+        // The launch view controller
+        let launchViewController = LaunchViewController()
+        launchViewController.tabBarItem.title = "Launches"
+        launchViewController.tabBarItem.image = UIImage(systemName: "calendar")
+        
+        tabBarController.setViewControllers([launchViewController], animated: true)
+        tabBarController.tabBar.tintColor = .systemRed
+        
+        window.rootViewController = tabBarController
         self.window = window
         window.makeKeyAndVisible()
     }
