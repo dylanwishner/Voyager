@@ -9,21 +9,21 @@
 /* Begin PBXBuildFile section */
 		FCE30BF625EA061600AC9BDA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE30BF525EA061600AC9BDA /* AppDelegate.swift */; };
 		FCE30BF825EA061600AC9BDA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE30BF725EA061600AC9BDA /* SceneDelegate.swift */; };
-		FCE30BFA25EA061600AC9BDA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE30BF925EA061600AC9BDA /* ViewController.swift */; };
-		FCE30BFD25EA061600AC9BDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCE30BFB25EA061600AC9BDA /* Main.storyboard */; };
+		FCE30BFA25EA061600AC9BDA /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE30BF925EA061600AC9BDA /* LaunchViewController.swift */; };
 		FCE30BFF25EA061700AC9BDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCE30BFE25EA061700AC9BDA /* Assets.xcassets */; };
 		FCE30C0225EA061700AC9BDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCE30C0025EA061700AC9BDA /* LaunchScreen.storyboard */; };
+		FCE30C0F25EA067600AC9BDA /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE30C0E25EA067600AC9BDA /* TabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FCE30BF225EA061600AC9BDA /* Voyager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Voyager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCE30BF525EA061600AC9BDA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FCE30BF725EA061600AC9BDA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FCE30BF925EA061600AC9BDA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FCE30BFC25EA061600AC9BDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FCE30BF925EA061600AC9BDA /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		FCE30BFE25EA061700AC9BDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FCE30C0125EA061700AC9BDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FCE30C0325EA061700AC9BDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCE30C0E25EA067600AC9BDA /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +56,23 @@
 		FCE30BF425EA061600AC9BDA /* Voyager */ = {
 			isa = PBXGroup;
 			children = (
+				FCE30C0B25EA065800AC9BDA /* ViewControllers */,
 				FCE30BF525EA061600AC9BDA /* AppDelegate.swift */,
 				FCE30BF725EA061600AC9BDA /* SceneDelegate.swift */,
-				FCE30BF925EA061600AC9BDA /* ViewController.swift */,
-				FCE30BFB25EA061600AC9BDA /* Main.storyboard */,
 				FCE30BFE25EA061700AC9BDA /* Assets.xcassets */,
 				FCE30C0025EA061700AC9BDA /* LaunchScreen.storyboard */,
 				FCE30C0325EA061700AC9BDA /* Info.plist */,
 			);
 			path = Voyager;
+			sourceTree = "<group>";
+		};
+		FCE30C0B25EA065800AC9BDA /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FCE30BF925EA061600AC9BDA /* LaunchViewController.swift */,
+				FCE30C0E25EA067600AC9BDA /* TabBarController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +134,6 @@
 			files = (
 				FCE30C0225EA061700AC9BDA /* LaunchScreen.storyboard in Resources */,
 				FCE30BFF25EA061700AC9BDA /* Assets.xcassets in Resources */,
-				FCE30BFD25EA061600AC9BDA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +144,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FCE30BFA25EA061600AC9BDA /* ViewController.swift in Sources */,
+				FCE30BFA25EA061600AC9BDA /* LaunchViewController.swift in Sources */,
+				FCE30C0F25EA067600AC9BDA /* TabBarController.swift in Sources */,
 				FCE30BF625EA061600AC9BDA /* AppDelegate.swift in Sources */,
 				FCE30BF825EA061600AC9BDA /* SceneDelegate.swift in Sources */,
 			);
@@ -146,14 +154,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		FCE30BFB25EA061600AC9BDA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FCE30BFC25EA061600AC9BDA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FCE30C0025EA061700AC9BDA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -289,6 +289,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3VR824L35U;
 				INFOPLIST_FILE = Voyager/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,6 +309,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3VR824L35U;
 				INFOPLIST_FILE = Voyager/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
